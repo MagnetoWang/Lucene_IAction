@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Class-Path: asm-5.1.jar hppc-0.7.3.jar icu4j-59.1.jar junit-4.10.jar T
+ agger-2.3.1.jar spatial4j-0.7.jar httpcore-4.4.6.jar asm-commons-5.1.
+ jar jts-core-1.15.0.jar nekohtml-1.9.17.jar httpclient-4.5.3.jar slf4
+ j-api-1.7.24.jar uimaj-core-2.3.1.jar xercesImpl-2.9.1.jar lucene-cor
+ e-7.3.1.jar lucene-demo-7.3.1.jar lucene-join-7.3.1.jar lucene-misc-7
+ .3.1.jar commons-codec-1.10.jar lucene-facet-7.3.1.jar lucene-codecs-
+ 7.3.1.jar lucene-memory-7.3.1.jar opennlp-tools-1.8.3.jar spatial4j-0
+ .7-tests.jar lucene-queries-7.3.1.jar lucene-sandbox-7.3.1.jar lucene
+ -spatial-7.3.1.jar lucene-suggest-7.3.1.jar morfologik-fsa-2.1.1.jar 
+ opennlp-maxent-3.0.3.jar commons-compress-1.14.jar commons-logging-1.
+ 1.3.jar lucene-grouping-7.3.1.jar antlr4-runtime-4.5.1-1.jar lucene-b
+ enchmark-7.3.1.jar lucene-spatial3d-7.3.1.jar lucene-replicator-7.3.1
+ .jar morfologik-polish-2.1.1.jar jetty-io-9.4.8.v20171121.jar lucene-
+ expressions-7.3.1.jar lucene-highlighter-7.3.1.jar lucene-queryparser
+ -7.3.1.jar morfologik-stemming-2.1.1.jar WhitespaceTokenizer-2.3.1.ja
+ r jetty-http-9.4.8.v20171121.jar jetty-util-9.4.8.v20171121.jar lucen
+ e-analyzers-icu-7.3.1.jar lucene-analyzers-uima-7.3.1.jar lucene-clas
+ sification-7.3.1.jar lucene-spatial-extras-7.3.1.jar lucene-test-fram
+ ework-7.3.1.jar jetty-server-9.4.8.v20171121.jar lucene-backward-code
+ cs-7.3.1.jar jetty-servlet-9.4.8.v20171121.jar lucene-analyzers-commo
+ n-7.3.1.jar lucene-analyzers-opennlp-7.3.1.jar lucene-analyzers-smart
+ cn-7.3.1.jar lucene-analyzers-stempel-7.3.1.jar randomizedtesting-run
+ ner-2.5.3.jar s2-geometry-library-java-1.0.0.jar lucene-analyzers-kur
+ omoji-7.3.1.jar lucene-analyzers-phonetic-7.3.1.jar lucene-analyzers-
+ morfologik-7.3.1.jar morfologik-ukrainian-search-3.9.0.jar jetty-cont
+ inuation-9.4.8.v20171121.jar log4j-core-2.11.0.jar IKAnalyzer2012_u6.
+ jar log4j-api-2.11.0.jar lucene-core-7.3.1.jar
+Main-Class: ExdicTest.Main
+
