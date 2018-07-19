@@ -23,7 +23,7 @@ public class BooleanQueryTest {
 
 	public static void main(String[] args) throws IOException {
 		String field = "title";
-		Path indexPath = Paths.get("indexdir");
+		Path indexPath = Paths.get("Lucene/indexdir");
 		Directory dir = FSDirectory.open(indexPath);
 		IndexReader reader = DirectoryReader.open(dir);
 		IndexSearcher searcher = new IndexSearcher(reader);

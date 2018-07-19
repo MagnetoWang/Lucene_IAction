@@ -1,7 +1,9 @@
 package tup.lucene.analyzer;
 
+
 import java.io.IOException;
 import java.io.StringReader;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -14,11 +16,18 @@ import org.apache.lucene.analysis.core.StopAnalyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class VariousAnalyzers {
+	private static final Logger logger = LoggerFactory.getLogger(VariousAnalyzers.class);
+
 	private static String str ="中华人民共和国简称中国,  是一个有13亿人口的国家"; 
 	public static void main(String[] args) throws IOException {
 		Analyzer analyzer = null;
+		String filename="C:\\Users\\wangzixian002\\IdeaProjects\\Lucene_IAction\\Lucene\\src\\main\\java\\tup\\lucene\\analyzer\\stopword.dic";
+		Path pathToFile = Paths.get(filename);
+		logger.info(filename);
 
 		analyzer = new StandardAnalyzer();// 标准分词
 		System.out.println("标准分词:" + analyzer.getClass());
@@ -40,8 +49,12 @@ public class VariousAnalyzers {
 		System.out.println("关键字分词:" + analyzer.getClass());
 		printAnalyzer(analyzer);
 
-		analyzer = new StopAnalyzer(Paths.get("stopword.dic"));
-		
+
+
+		System.out.println("pathToFile : "+pathToFile.getFileName());
+		analyzer = new StopAnalyzer(pathToFile.getFileName());
+//		analyzer = new StopAnalyzer(("src/main/java/tup/lucene/analyzer/stopword.dic"));
+
 		// 停用词分词
 		System.out.println("停用词分词:" + analyzer.getClass());
 		printAnalyzer(analyzer);

@@ -30,7 +30,7 @@ import tup.lucene.ik.IKAnalyzer6x;
 public class HighlighterTest {
 	public static void main(String[] args) throws IOException, InvalidTokenOffsetsException, ParseException {
 		String field = "title";
-		Path indexPath = Paths.get("indexdir");
+		Path indexPath = Paths.get("resourse/indexdir");
 		Directory dir = FSDirectory.open(indexPath);
 		IndexReader reader = DirectoryReader.open(dir);
 		IndexSearcher searcher = new IndexSearcher(reader);

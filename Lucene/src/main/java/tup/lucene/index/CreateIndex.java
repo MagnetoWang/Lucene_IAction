@@ -53,7 +53,7 @@ public class CreateIndex {
 		Directory dir = null;
 		IndexWriter inWriter = null;
 		// 索引目录
-		Path indexPath = Paths.get("indexdir");
+		Path indexPath = Paths.get("Lucene/indexdir");
 
 		try {
 			if (!Files.isReadable(indexPath)) {
